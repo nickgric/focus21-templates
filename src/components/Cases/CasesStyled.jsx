@@ -65,6 +65,7 @@ export const Case = ({ image, link }) => {
         backgroundSize="cover"
         boxShadow={`10px 0px 0px 0px ${lightColor}`}
         borderRadius="20px 0px 0px 20px"
+        _hover={{ boxShadow: `10px 0px 0px 0px ${accentColor}` }}
       ></Box>
     </Link>
   );

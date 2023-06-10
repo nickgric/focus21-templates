@@ -7,7 +7,7 @@ export const Navigation = () => {
       <NavigationLink text="Home" link="/" active />
       <NavigationLink text="Cases" link="/cases" />
       <NavigationLink text="Trends" link="/trends" />
-      <NavigationLink text="Careers" />
+      <NavigationLink text="About" />
       <Button styleType="main" text="Contact" />
     </NavigationBox>
   );

@@ -1,4 +1,4 @@
-import { HeaderBox, BottomLine, Logo } from "./HeaderStyled";
+import { HeaderBox, Logo } from "./HeaderStyled";
 import { Container } from "../Contrainer";
 import { Navigation } from "../Navigation";
 
@@ -11,7 +11,6 @@ export const Header = () => {
           <Navigation />
         </HeaderBox>
       </Container>
-      <BottomLine />
     </>
   );
 };

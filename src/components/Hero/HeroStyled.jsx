@@ -17,14 +17,28 @@ export const TextBox = ({ children }) => {
   );
 };
 
+export const SideBox = ({ children }) => {
+  return (
+    <Flex
+      as="div"
+      flexDirection="column"
+      justifyContent="space-between"
+      gap="20px"
+    >
+      {children}
+    </Flex>
+  );
+};
+
 export const HeroImage = () => {
   return (
     <Image
       as="img"
       src="https://i.ibb.co/6w3fLrT/hero.png"
       alt="Focus21 hero"
-      boxShadow={`20px 0px 0px 0px ${accentColor}`}
-      w="35%"
+      borderRadius="0px 20px 20px 0px"
+      boxShadow={`10px 0px 0px 0px ${accentColor}`}
+      w="350px"
     />
   );
 };

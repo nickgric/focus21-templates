@@ -1,1 +1,1 @@
-export { Title } from "./MainTitle";
+export { MainTitle } from "./MainTitle";

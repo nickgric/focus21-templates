@@ -12,7 +12,13 @@ export const NavigationBox = ({ children }) => {
 
 export const NavigationLink = ({ link, text }) => {
   return (
-    <Text as="li" listStyleType="none" fontFamily={mainFont} color="red">
+    <Text
+      as="li"
+      listStyleType="none"
+      fontFamily={mainFont}
+      fontWeight="600"
+      _hover={{ color: accentColor }}
+    >
       <Link to={link}>{text}</Link>
     </Text>
   );

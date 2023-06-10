@@ -1,4 +1,5 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
+import { lightColor } from "../../styles/variables";
 
 export const HeaderBox = ({ children }) => {
   return (
@@ -9,7 +10,7 @@ export const HeaderBox = ({ children }) => {
 };
 
 export const BottomLine = () => {
-  return <Box as="div" h="1px" w="100%" backgroundColor="#d3d3d3" />;
+  return <Box as="div" h="1px" w="100%" backgroundColor={lightColor} />;
 };
 
 export const Logo = () => {

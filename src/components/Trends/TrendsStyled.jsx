@@ -1,12 +1,40 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { lightColor, accentColor } from "../../styles/variables";
+import { lightColor, accentColor, mainFont } from "../../styles/variables";
 
 export const TrendsBox = ({ children }) => {
   return (
-    <Flex as="div" py="50px" flexDirection="column" gap="20px">
+    <Flex as="div" py="50px" flexDirection="column" gap="25px">
       {children}
     </Flex>
+  );
+};
+
+export const Filter = ({ children }) => {
+  return (
+    <Flex
+      as="ul"
+      justifyContent="center"
+      alignItems="center"
+      flexWrap="wrap"
+      gap="15px"
+    >
+      {children}
+    </Flex>
+  );
+};
+
+export const Category = ({ name, active }) => {
+  return (
+    <Text
+      as="li"
+      listStyleType="none"
+      fontFamily={mainFont}
+      fontWeight={active ? "800" : "600"}
+      _hover={{ color: accentColor }}
+    >
+      <Link>{name}</Link>
+    </Text>
   );
 };
 

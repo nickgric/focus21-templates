@@ -1,9 +1,21 @@
+import { Container } from "../Contrainer";
 import { SubTitleBox, Message } from "./SubTitleStyled";
 
-export const SubTitle = ({ text, invert }) => {
+export const SubTitle = ({ text, invert, inner }) => {
   return (
-    <SubTitleBox>
-      <Message text={text} invert={invert} />
-    </SubTitleBox>
+    <>
+      {!inner && (
+        <Container>
+          <SubTitleBox>
+            <Message text={text} invert={invert} />
+          </SubTitleBox>
+        </Container>
+      )}
+      {inner && (
+        <SubTitleBox>
+          <Message text={text} invert={invert} />
+        </SubTitleBox>
+      )}
+    </>
   );
 };

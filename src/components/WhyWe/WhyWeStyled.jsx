@@ -1,14 +1,14 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
-import { accentColor } from "../../styles/variables";
+import { lightColor } from "../../styles/variables";
 
-export const AboutBox = ({ children }) => {
+export const WhyWeBox = ({ children }) => {
   return (
     <Box as="div" py="50px">
       <Flex
         as="div"
-        backgroundColor={accentColor}
+        backgroundColor={lightColor}
         borderRadius="20px"
-        p="40px"
+        p="30px"
         gap="20px"
       >
         {children}
@@ -25,12 +25,12 @@ export const TextBox = ({ children }) => {
   );
 };
 
-export const AboutImage = () => {
+export const WhyWeImage = () => {
   return (
     <Image
       as="img"
-      src="https://i.ibb.co/SP1kQ0C/about.png"
-      alt="Focus21 hero"
+      src="https://i.ibb.co/xY7gDk6/WhyWe.png"
+      alt="Focus21 whywe"
       w="350px"
     />
   );

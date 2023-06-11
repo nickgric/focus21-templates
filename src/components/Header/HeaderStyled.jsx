@@ -1,4 +1,5 @@
 import { Flex, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export const HeaderBox = ({ children }) => {
   return (
@@ -10,11 +11,13 @@ export const HeaderBox = ({ children }) => {
 
 export const Logo = () => {
   return (
-    <Image
-      as="img"
-      src="https://i.ibb.co/rGjJnwg/logo.png"
-      alt="Focus21 logo"
-      w="200px"
-    />
+    <Link to="/">
+      <Image
+        as="img"
+        src="https://i.ibb.co/rGjJnwg/logo.png"
+        alt="Focus21 logo"
+        w="200px"
+      />
+    </Link>
   );
 };

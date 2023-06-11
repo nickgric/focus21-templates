@@ -2,7 +2,11 @@ import { Box, Text } from "@chakra-ui/react";
 import { lightColor, mainFont, invertColor } from "../../styles/variables";
 
 export const ParagraphBox = ({ children }) => {
-  return <Box>{children}</Box>;
+  return (
+    <Box as="div" py="5px">
+      {children}
+    </Box>
+  );
 };
 
 export const Message = ({ text, center, invert }) => {

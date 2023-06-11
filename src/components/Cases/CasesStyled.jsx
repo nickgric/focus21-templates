@@ -4,7 +4,7 @@ import { mainFont, accentColor, lightColor } from "../../styles/variables";
 
 export const CasesBox = ({ children }) => {
   return (
-    <Flex as="div" py="50px" flexDirection="column" gap="50px">
+    <Flex as="div" py="50px" flexDirection="column" gap="25px">
       {children}
     </Flex>
   );

@@ -1,17 +1,18 @@
-import { Box } from "@chakra-ui/react";
 import { Container } from "../Contrainer";
-import { TrendsBox, News, Info } from "./TrendsStyled";
-import { SubTitle } from "../SubTitle";
-import { Line } from "../Line";
+import { TrendsBox, News, Info, Filter, Category } from "./TrendsStyled";
 
 export const Trends = () => {
   return (
     <Container>
       <TrendsBox>
-        <Box>
-          <SubTitle text="Following Trends:" />
-          <Line />
-        </Box>
+        <Filter>
+          <Category name="→ All Trends" />
+          <Category name="→ MWC 2023 (Barcelona, Spain)" />
+          <Category name="→ WWDC 2023 (Cupertino, USA)" active />
+          <Category name="→ Collision 2023 (Toronto, Canada)" />
+          <Category name="→ Artificial Intelligence (AI)" />
+          <Category name="→ Mixed Reality (MR)" />
+        </Filter>
         <News>
           <Info image="https://i.ibb.co/d5yPbKC/1.jpg" link="/trends" />
           <Info image="https://i.ibb.co/TRN10tR/2.jpg" link="/trends" />

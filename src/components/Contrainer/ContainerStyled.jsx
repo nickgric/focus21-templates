@@ -12,7 +12,7 @@ export const ContainerBox = ({ children }) => {
         xl: "1280px",
       }}
       px={{
-        base: "15px",
+        base: "150px",
       }}
       mx={"auto"}
     >
